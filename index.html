@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>OriginX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Boot Loader Preloader -->
+  <div id="boot-loader" class="boot-loader">
+    <div class="loader-content">
+      <div class="loader-logo"><div class="logo-text">OriginX</div></div>
+      <div class="loader-progress">
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="progress-text" id="progress-text">Loading...</div>
+      </div>
+      <div class="loader-animation"><div class="spinner"></div></div>
+    </div>
+  </div>
+
+  <!-- Tap-to-Start Screen (hidden by default, shown after boot loader) -->
+  <div id="tap-screen" class="tap-screen" style="display:none;">
+    <h1>Tap to Continue</h1>
+  </div>
+
+  <!-- Blurred Collage Background -->
+  <div class="collage-background" id="collage-background"></div>
+
+  <!-- Background Slideshow -->
+  <div class="slideshow-container" id="slideshow"></div>
+
+  <!-- Birthday Message -->
+  <div class="birthday-message-container">
+    <h1 class="birthday-message">🎉 Happy Birthday <span class="name-highlight">Bavya Sri</span>! 🎂</h1>
+    <p class="sub-message">Hope your special day is wonderful!</p>
+  </div>
+
+  <!-- Inline Slideshow -->
+  <div class="inline-slideshow" id="inline-slideshow"></div>
+
+  <!-- Emoji celebration layer -->
+  <div class="emoji-layer" id="emoji-layer"></div>
+
+  <!-- Balloons -->
+  <div class="balloons-container">
+    <div class="balloon balloon-1">🎈</div>
+    <div class="balloon balloon-2">🎈</div>
+    <div class="balloon balloon-3">🎈</div>
+    <div class="balloon balloon-4">🎈</div>
+    <div class="balloon balloon-5">🎈</div>
+  </div>
+
+  <!-- Confetti -->
+  <div class="confetti-container" id="confetti"></div>
+
+  <!-- Music -->
+  <audio id="bg-music" loop preload="auto" playsinline style="display:none;">
+    <source src="The-Birthday-Gift-MassTamilan.fm.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
